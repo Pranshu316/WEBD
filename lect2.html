@@ -4,28 +4,34 @@
             L
         </title>
         <script>
-            function hadeleSubmit(event){
-                event.preventDefault();
+            function handleSubmit(event) {
+                event.preventDefault(); // Prevents the default form submission
+                
+                // Get form data
+                const formData = new FormData(event.target);
+                const data = {};
+                
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
     
-                const FormData = new FormData(even.target);
-    
-                const data = Object.fromEntried(fordata);
-    
-                console.log(data)
+                // Log the form data to the console
+                console.log('Form Data:', data);
             }
-            </script>
+        </script>
     </head>
     <body>
-    <form>
+    <form onsubmit="handleSubmit(event)">
         <h1>Email Login</h1>
         <label for="email">Email ID</label>
-        <input type="email" id="username" name="username" required>
+        <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Login</button>
+        <input type="hidden" id="custId" name="custId" value="3487">
     </form>
-    <form >
+    <form onsubmit="handleSubmit(event)">
         <h1>Register</h1>
         <label for="username">Name:</label>
         <input type="text" id="username" name="username">
@@ -62,6 +68,10 @@
     <form action="lect2.html">
         <input type="submit" value="login page">
     </form>
+    <form action="dashbord.html">
+        <input type="submit" value="welcome page">
+    </form>
+
 
     </body>
 </html>
