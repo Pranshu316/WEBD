@@ -1,9 +1,67 @@
-<h1>Email Login</h1>
-<label for="email">Email ID</label>
-<input type="email" id="username" name="username" required>
-<br>
-<label for="password">Password</label>
-<input type="password" id="password" name="password" required>
-</br>
-<button type="submit">Login</button>
-</form>
+<html>
+    <head>
+        <title>
+            L
+        </title>
+        <script>
+            function hadeleSubmit(event){
+                event.preventDefault();
+    
+                const FormData = new FormData(even.target);
+    
+                const data = Object.fromEntried(fordata);
+    
+                console.log(data)
+            }
+            </script>
+    </head>
+    <body>
+    <form>
+        <h1>Email Login</h1>
+        <label for="email">Email ID</label>
+        <input type="email" id="username" name="username" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <form >
+        <h1>Register</h1>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="mobile no">Mobile no.: </label>
+        <input type="text" id="mobile no" name="mobile no">
+        
+        <br>
+        <label for="email"">Email id</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="Gender">Gender:</label>
+        <select name="Gender" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input type="SUBMIT" value="submit">
+        <br>
+        <label for="Father Name">Father Name:</label>
+        <input type="text" id="Father Name" name="Father Name">
+        <br>
+        <label for="Mother Name">Mother Name:</label>
+        <input type="text" id="Mother Name" name="Mother Name">
+        <br>
+        <label for="college Name">Father Name:</label>
+        <input type="text" id="college Name" name="college Name">
+        <br>
+        <p>Do you check all your information:</p>
+        <input type="radio" id="YES" name="check info" value="YES">
+        <label for="check info">YES</label>
+        <input type="radio" id="NO" name="check info" value="NO">
+        <label for="check info">NO</label><br>
+    </form>
+    <form action="lect2.html">
+        <input type="submit" value="login page">
+    </form>
+
+    </body>
+</html>
