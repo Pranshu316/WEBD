@@ -19,17 +19,56 @@
                 console.log('Form Data:', data);
             }
         </script>
+        <style>
+        h1{
+            color: blue;
+            font-size: small
+        }
+        .full{
+            color:red;
+            font-size:small;
+        }
+        h1,
+        .full{
+            color:rgb(31, 4, 132);
+            font-size:small;
+        }
+        #test{
+            color:rgb(239, 83, 5);
+            font-size:large;
+        }
+        input>#email{
+            border-color:red
+        }
+        
+        </style>
+        <div class = "full">
+            this is div style ,class
+        </div>
+        <h1 id="test">this is id</h1>
     </head>
     <body>
     <form onsubmit="handleSubmit(event)">
         <h1>Email Login</h1>
-        <label for="email">Email ID</label>
+        <label for="email" class="email" >Email ID</label>
         <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
         <button type="submit">Login</button>
         <input type="hidden" id="custId" name="custId" value="3487">
+        <br>
+        <label for="CITY">CITY</label>
+        <select name="city" id="state" multiple >
+            <option value="Kanpur" disable>Kanpur</option>
+            <option value="Mathura">Mathura</option>
+            <option value="Lucknow">Lucknow</option>
+        </select>
+        <br>
+        <label for="file upload">Upload File</label>
+        <input type="file" id="file-upload" >
+        <button type="submit">Submit</button>
+        
     </form>
     <form onsubmit="handleSubmit(event)">
         <h1>Register</h1>
@@ -56,9 +95,6 @@
         <label for="Mother Name">Mother Name:</label>
         <input type="text" id="Mother Name" name="Mother Name">
         <br>
-        <label for="college Name">Father Name:</label>
-        <input type="text" id="college Name" name="college Name">
-        <br>
         <p>Do you check all your information:</p>
         <input type="radio" id="YES" name="check info" value="YES">
         <label for="check info">YES</label>
@@ -71,6 +107,12 @@
     <form action="dashbord.html">
         <input type="submit" value="welcome page">
     </form>
+    h1{
+        color: red 
+        size: 18
+
+    }
+   
 
 
     </body>
