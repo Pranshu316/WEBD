@@ -7,7 +7,7 @@
                 padding:50px;
             }
             .FirstBox{
-                height: 40px;
+                height: 200px;
                 width:10;
                 border:0.2rem solid rgb(0, 0, 0);
                 /*padding:25px 20px 25px 60px;*/
@@ -16,33 +16,29 @@
 
             }
             .fbox{
-                border:0.2rem solid black;
-                width:200px;
-                position:absolute;
-                top:30px;
-                left:30px;
-                height:30px;
-
-
+                grid-area: header;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: pink;
             }
             .sbox{
-                border:0.2rem solid black;
-                width:200px;
-                position:absolute;
-                top:50px;
-                left:30px;
-                height:60px;
-                margin-top:20px;
+                grid-area: header;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: pink;
 
             }
             .tbox{
                 border:0.2rem solid black;
+                grid-area: aside;
                 width:200px;
                 position:absolute;
-                top:70px;
+                top:90px;
                 left:30px;
                 height:90px;
-                margin-top:40px;
+                
 
             }
             .obox{
@@ -52,7 +48,7 @@
                 top:90px;
                 left:30px;
                 height:120px;
-                margin-top:60px;
+               
 
             }
             .fvbox{
@@ -62,19 +58,10 @@
                 top:110px;
                 left:30px;
                 height:150px;
-                margin-top:80px;
+                
 
             }
-            .secondbox{
-                height: 100px;
-                width:10;
-                border:0.2rem solid rgb(0, 0, 0);
-                /*padding:25px 20px 25px 60px;*/
-                padding: 13px 1px 1px 1px ;
-                padding:10vw;
-                margin-left:400px;
-            }
-
+            
         </style>
     
     </head>
@@ -87,8 +74,5 @@
             <div class="vbox">div</div>
         </div>
         <br>
-        <div class="secondbox">
-            <div>div</div>
-        </div>
     </body>
 </html>
