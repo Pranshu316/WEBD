@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-like Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav nav"
+                "section aside"
+                "article aside"
+                "footer footer";
+            grid-gap: 10px; 
+            padding: 20px;
+            border: 2px solid black;
+            width: 350px;
+            height: 500px;
+        }
+
+        .header {
+            grid-area: header;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: pink;
+            
+        }
+
+        .nav {
+            grid-area: nav;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: yellowgreen;
+
+        }
+
+        .section {
+            grid-area: section;
+            border-radius: 10px;
+
+            padding: 20px;
+background-color: aquamarine;
+            text-align: center;
+
+        }
+
+        .article {
+            grid-area: article;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: cadetblue;
+
+
+        }
+
+        .aside {
+            grid-area: aside;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: aqua;
+
+
+        }
+
+        .footer {
+            grid-area: footer;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: blueviolet;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="section">Section</div>
+        <div class="aside">Aside</div>
+        <div class="article">Article</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
