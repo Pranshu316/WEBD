@@ -1,0 +1,100 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+        
+            
+            p:hover
+            {
+                background-color:rgb(254, 158, 56);
+                font-size:large;
+                content:'.';
+            }
+            a:hover{
+                color: rgb(252, 0, 0);
+                content:'.';
+            }
+            .child:hover {
+                visibility: visible;
+                opacity: 1;
+            } 
+            p{
+                display: none;
+                background-color: rgb(240, 191, 157);
+            }
+            div:hover p{
+                display: block;
+            }
+            strong:first-child{
+                background-color: rgb(56, 238, 47);
+            }
+            strong+strong{
+                color: rgb(18, 134, 197);
+            }
+            li::first-letter{
+                color: red;
+                content:'.';
+            }
+            div>p::after{
+                content:'.';
+            }
+            div{
+                border:1rem solid red;
+                /*padding:25px 20px 25px 60px;*/
+                padding-bottom: 60px;
+                padding:10vw;
+
+            }
+            .box{
+                height: 70px;
+                padding:40px;
+                background-color:blue;
+                padding:10vw;
+            }
+            .innerBox{
+                height: 40px;
+                background-color: rgb(240, 191, 157);
+                padding-bottom:5px;
+                padding:10vw;
+            }
+
+
+            
+        </style>
+        <div class="child">This is parent
+            <p>this is child</p>
+        </div>
+        <!--
+        <div class="child">
+            <p id="paragraph" class="child">this is css lect</p>
+            <p class="">tag</p>
+            <div id="para" class="">child paragraph</div>
+            <p class="">tag</p>
+            <section>
+                <p id="para">nestedtag</p>
+            </section
+            <p class="">tag</p>
+            
+        <p id="example" class="child">this is css lect</p>
+        </div>
+        <a href="www.google.com" id="sample" target="_blank">this is a link</a>
+    -->
+        <div>find the paragraph tag
+            <p>hey i <strong>here</strong></p>
+        </div>
+        <div>find the paragraph tag
+            <p>
+                <strong>hey</strong> 
+                i 
+                <strong>am</strong>
+                <strong>here</strong>
+            </p>
+        </div>
+        <div>hover
+            <p>inside div1</p>
+        </div>
+        <div class="box">
+            <div class="innerBox">Hello there</div>
+        </div>
+    </body>
+</html>
